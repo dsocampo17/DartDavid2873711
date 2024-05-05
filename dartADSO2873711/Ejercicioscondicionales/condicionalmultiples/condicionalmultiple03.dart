@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'dart:math';
-void main(){
+void main() {
   //David Ocampo - EJE Condicional Multiple 03
   /*
   Dados como datos dos variables de tipo entero, obtenga el resultado de la siguiente función:

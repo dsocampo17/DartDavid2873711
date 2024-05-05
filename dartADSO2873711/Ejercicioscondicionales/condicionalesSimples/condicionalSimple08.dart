@@ -21,8 +21,6 @@ void main(){
     costoLlamada = 600 + minutosAdicionales * 150;
 
   }
-    
-  
   //Salida
   print("El costo de la llamada es: $costoLlamada");
 }
