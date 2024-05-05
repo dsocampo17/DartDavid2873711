@@ -1,8 +1,9 @@
 import 'dart:io';
 
 void main() {
-  //MARIA PAULA MELO SOLANO- EJE condicional anidados 01 
-  /*Dado tres números calcular el mayor */
+  // David Ocampo - EJE Condicional Anidado 01
+  /* Dado tres números calcular el mayor 
+  */
   // Declarar variables 
   int num1, num2, num3, mayor;
 
@@ -16,7 +17,7 @@ void main() {
   print("Ingrese el tercer número:");
  num3 = int.parse(stdin.readLineSync()!);
 
- //PROCESO
+ // PROCESO
   mayor = 0;
   if (num1 > num2) {
     mayor = num1;

@@ -1,22 +1,19 @@
 import 'dart:io';
-void main(){
-//MARIA PAULA MELO SOLANO- EJE condicional multiple 06
-/*Desarrollar un algoritmo que lea el nombre del mes y el año e imprima en pantalla cuantos días tiene.
-Es necesario tener en cuenta si es año bisiesto o no*/
-
-  // Definición de variables
+void main() {
+  // David Ocampo - EJE Condicional Multiple 06
+  /*
+  Desarrollar un algoritmo que lea el nombre del mes y el año e imprima en pantalla cuantos días tiene.
+  Es necesario tener en cuenta si es año bisiesto o no.
+  */
+  // Definición vbles
   String mes;
   int anio;
   int diasMes;
-
-  // Entrada de datos
+  // Entrada Alg
   print('Ingrese el nombre del mes (en minúsculas):');
   mes = stdin.readLineSync()!.toLowerCase();
-
   print('Ingrese el año:');
   anio = int.parse(stdin.readLineSync()!);
-
-  // Cálculo del número de días
   switch (mes) {
     case 'enero':
       diasMes = 31;
@@ -62,13 +59,10 @@ Es necesario tener en cuenta si es año bisiesto o no*/
       print('Error: El mes ingresado no es válido.');
       return;
   }
-
   // Salida
   print('El mes $mes del año $anio tiene $diasMes días.');
 }
-
-// Función para determinar si un año es bisiesto
-bool esBisiesto(int anio) {
+  bool esBisiesto(int anio) {
   if (anio % 400 == 0) {
     return true;
   } else if (anio % 100 == 0) {

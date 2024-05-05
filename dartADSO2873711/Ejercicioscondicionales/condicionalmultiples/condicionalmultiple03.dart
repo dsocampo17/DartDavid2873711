@@ -1,24 +1,25 @@
 import 'dart:io';
 import 'dart:math';
 void main(){
-//MARIA PAULA MELO SOLANO- EJE condicional multiple 03
-/* Dados como datos dos variables de tipo entero, obtenga el resultado de la siguiente función:
-Val      |     Num
-100 * v  |      1
-100^v    |      2
-100/v    |      3
-0        |Cualquier número
-*/
-//Definición de variables
-int v, num;
-double resultado;
-//Entrada
-print("Ingrese el valor de v:");
-v = int.parse(stdin.readLineSync()!);
-print("Ingrese el valor de num: (1, 2, 3)");
-num = int.parse(stdin.readLineSync()!);
-//Proceso
- switch (num) {
+  //David Ocampo - EJE Condicional Multiple 03
+  /*
+  Dados como datos dos variables de tipo entero, obtenga el resultado de la siguiente función:
+  Val      |     Num
+  100 * v  |      1
+  100^v    |      2
+  100/v    |      3
+  0        |Cualquier número
+  */
+  // Definición de variables
+  int v, num;
+  double resultado;
+  // Entrada
+  print("Ingrese el valor de v:");
+  v = int.parse(stdin.readLineSync()!);
+  print("Ingrese el valor de num: (1, 2, 3)");
+  num = int.parse(stdin.readLineSync()!);
+  // Proceso
+  switch (num) {
     case 1:
       resultado = 100 * v.toDouble();
       break;
@@ -34,7 +35,7 @@ num = int.parse(stdin.readLineSync()!);
 
   }
 
-  //SALIDA
-print("el valor de la variable es es: $v");
-print("el resultado es: $resultado");
+  // SALIDA
+  print("el valor de la variable es es: $v");
+  print("el resultado es: $resultado");
 }

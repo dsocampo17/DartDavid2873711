@@ -1,7 +1,7 @@
 import 'dart:io';
-void main(){
-//MARIA PAULA MELO SOLANO-EJE CONDICIONALES ANIDADOS 10
-//DEFINICIÓN Vbles
+void main() {
+  //David Ocampo - EJE Condicional Anidado 10
+  //Definicion Vbles
   int edad;
   double nivelHemo;
   String? genero, resultado, opcionEdad;
