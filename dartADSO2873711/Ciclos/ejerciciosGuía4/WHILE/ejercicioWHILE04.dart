@@ -8,7 +8,7 @@ void main (List<String> args) {
   1 o 2  | amarilla
   3 o 4  | rosada
   5 o 6  | roja
-  7 o 8  |verde
+  7 o 8  | verde
   9 o 0  | azul
   */
 
