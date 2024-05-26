@@ -1,5 +1,4 @@
 import 'dart:io';
-
 void main(List<String> args) {
   /* David Ocampo - Eje FOR 01
   Calcular el promedio de un alumno que tiene 7 calificaciones en la materia de Diseño Estructurado

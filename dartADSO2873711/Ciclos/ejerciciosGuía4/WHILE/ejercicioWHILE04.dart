@@ -1,10 +1,9 @@
 import 'dart:io';
-
-void main() {
-  /*El Depto. de Seguridad Publica y Transito del D.F. desea saber, de los n autos que entran a la ciudad
+void main (List<String> args) {
+  // David Ocampo - Eje While 04
+  /* El Depto. de Seguridad Publica y Transito del D.F. desea saber, de los n autos que entran a la ciudad
   de México, cuantos entran con calcomanía de cada color. Conociendo el último dígito de la placa de
   cada automóvil se puede determinar el color de la calcomanía utilizando la sig. relación:
-
   DÍGITO | COLOR
   1 o 2  | amarilla
   3 o 4  | rosada
@@ -15,15 +14,15 @@ void main() {
 
   //DEFINICIÓN
   int cantidadAutos;
-  int  contador=0, calcAmarilla=0, calcRosa=0, calcRoja=0, calcVerde=0, calcAzul=0;
+  int calcRosa=0, calcRoja=0, calcAmarilla=0, calcVerde=0, calcAzul=0, contador=0;
   int placa;
 
   //PROCESOS
-  print("Escriba la cantidad de autos que entraro a la ciudad");
+  print("Escriba la cantidad de autos que ingresaron a la ciudad ");
   cantidadAutos = int.parse(stdin.readLineSync()!);
 
   while (contador < cantidadAutos) {
-    print("Digite el último número en la placa del carro ");
+    print("Escriba el último número de la placa del carro ");
     placa = int.parse(stdin.readLineSync()!);
     contador++;
 
@@ -48,7 +47,7 @@ void main() {
     }
 
     else {
-      print("la placa es incorrecta");
+      print("La placa no es válida");
     }
   }
 

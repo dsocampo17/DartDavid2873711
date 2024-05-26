@@ -1,5 +1,4 @@
 import 'dart:io';
-
 void main (List<String> args) {
   /* David Ocampo - Eje While 01
   Una compañía de seguros tiene contratados a n vendedores. Cada uno hace tres ventas a la semana.
@@ -9,13 +8,13 @@ void main (List<String> args) {
   sueldo base y sus comisiones.
   */
   // Definición Variables
-  int cantVendedores, salarioBase, acumulador, cantidad = 3, contador=0;
-  double comisiones, ventas, salariototal;
+  int salarioBase, cantidad = 3, acumulador, cantVendedores, contador=0;
+  double ventas, salariototal, comisiones;
   
-  print("Digite la cantidad de empleados contratados");
+  print("Ingrese la cantidad de empleados contratados");
   cantVendedores = int.parse(stdin.readLineSync()!);
   while (contador < cantVendedores) {
-  print("Digite el salario base");
+  print("Ingrese el salario base");
   salarioBase=int.parse(stdin.readLineSync()!);
   for (int i=0; i<cantidad;i++) {
     print("Ingrese el valor de la venta " + (i+1).toString());
@@ -25,13 +24,8 @@ void main (List<String> args) {
   }
 
   comisiones = salarioBase * 0.10;
-  print("El vendedor tiene un total de $comisiones de comisión");
+  print("El vendedor tiene un total de $comisiones comisión");
   salariototal = salarioBase + comisiones;
   print("El vendedor obtuvo un salario semanal de $salariototal ");
-
-
 }
-
-
-
 }

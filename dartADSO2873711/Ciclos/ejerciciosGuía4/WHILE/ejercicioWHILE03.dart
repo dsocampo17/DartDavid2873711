@@ -1,9 +1,9 @@
 import 'dart:io';
-
-void main() {
+void main (List<String> args) {
+  // David Ocampo - Eje While 03
   /* Determinar cuantos hombres y cuantas mujeres se encuentran en un grupo de n personas,
-  suponiendo que los datos son extraídos alumno por alumno.*/
-
+  suponiendo que los datos son extraídos alumno por alumno.
+  */
   //DEFINICIÓN 
   int cantidadPersonas;
   int contador=0, hombres=0, mujeres=0;
@@ -12,9 +12,8 @@ void main() {
   //PROCESOS
   print("Escriba cuantas personas se van a evaluar");
   cantidadPersonas = int.parse(stdin.readLineSync()!);
-
   while (contador < cantidadPersonas) {
-    print("Escriba (H) en caso de ser hombre o (M) en caso mujer");
+    print("En caso de ser Mujer, escriba M, de lo contrario escriba H");
     genero = stdin.readLineSync();
     contador++;
 
