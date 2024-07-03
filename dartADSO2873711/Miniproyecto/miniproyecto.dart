@@ -40,11 +40,9 @@ void ingresarEstudiantes(Map<String, dynamic> estudiantes) {
     estudiantes[nombre] = {};
   }
 }
-
 void ingresarTemas(Map<String, dynamic> temas) {
   print('Ingrese cantidad de temas: ');
   int cantidad = int.parse(stdin.readLineSync()!);
-
   for (int i = 0; i < cantidad; i++) {
     print('Ingrese nombre del tema ${i + 1}: ');
     String nombre = stdin.readLineSync()!;
@@ -53,7 +51,6 @@ void ingresarTemas(Map<String, dynamic> temas) {
     temas[nombre] = {'complejidad': complejidad, 'estudiantes': []};
   }
 }
-/////////////////////////////////////////////////////////////////////////////////////////////////////
 void repartirEstudiantes(Map<String, dynamic> estudiantes, Map<String, dynamic> temas) {
   List<String> estudiantesList = estudiantes.keys.toList();
   Random random = Random();
