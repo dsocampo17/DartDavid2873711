@@ -5,15 +5,19 @@ class Empleado {
   String puesto;
   String tipoContrato;
 
+  // Constructor
+
   Empleado(this.nombre, this.edad, this.salario, this.puesto, this.tipoContrato);
 
+  // Metodo aumentar salario
+
   void aumentarSalario(double porcentaje) {
-    salario += salario * (porcentaje / 100);
+    this.salario += salario * (porcentaje / 100);
     print("Salario aumentado. Nuevo salario: $salario");
   }
 
   void cumplirAnios() {
-    edad++;
+    this.edad++;
     print("$nombre cumple años. Nueva edad: $edad");
   }
 
