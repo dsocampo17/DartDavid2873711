@@ -33,7 +33,6 @@ void main() {
     
     empleados.add(Empleado(nombre, edad, salario, puesto, tipoContrato));
   }
-
   print("*" * 50);
   
   for (Empleado empleado in empleados) {
